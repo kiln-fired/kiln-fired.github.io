@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "KILN: Kubernetes Integrated Lightning Network"
+title: "KILN: Kubernetes Integrated Lightning Node"
 email: david.gordon@nusun.us
 description: Kubernetes-native and fully autonomous Lightning node for enterprises
 baseurl: "" # the subpath of your site, e.g. /blog
