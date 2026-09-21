@@ -10,13 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-  <link rel="icon" href="{{ '/assets/kiln-mark.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/assets/kiln-logo.svg' | relative_url }}" type="image/svg+xml">
   {% feed_meta %}
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand-mark">{% include kiln-mark.svg %}</span>
+      <img class="brand-logo" src="{{ '/assets/kiln-logo.svg' | relative_url }}" alt="Kiln">
       <span class="brand-name">KILN</span>
     </a>
     <nav class="site-nav" aria-label="Main navigation">
@@ -30,7 +30,7 @@
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <span class="brand-mark">{% include kiln-mark.svg %}</span>
+      <img class="brand-logo" src="{{ '/assets/kiln-logo.svg' | relative_url }}" alt="">
       <div><strong>Kiln</strong><span>Kubernetes-native Bitcoin + Lightning infrastructure.</span></div>
     </div>
     <div class="footer-links">
