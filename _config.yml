@@ -9,6 +9,3 @@ permalink: /blog/:title/
 markdown: kramdown
 plugins:
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
