@@ -6,7 +6,7 @@ title: Kiln
 <section class="hero">
   <div class="hero-copy">
     <div class="eyebrow"><span></span> Kubernetes-native Bitcoin + Lightning</div>
-    <h1>Run Bitcoin infrastructure like infrastructure.</h1>
+    <h1>Run Bitcoin infrastructure on Kubernetes</h1>
     <p class="lede">Kiln extends Kubernetes with purpose-built APIs for operating Bitcoin and Lightning nodes, preserving node identity, managing credentials, and reconciling the lifecycle of stateful protocol infrastructure.</p>
     <div class="hero-actions">
       <a class="button primary" href="https://github.com/kiln-fired/kiln-operator">View the operator <span>↗</span></a>
@@ -54,24 +54,6 @@ title: Kiln
   </div>
 </section>
 
-<section class="architecture">
-  <div class="section-kicker">The shape</div>
-  <div class="arch-grid">
-    <div class="arch-copy">
-      <h2>Small API surface. Stateful consequences.</h2>
-      <p>The operator keeps the user-facing model compact while handling the details that matter underneath: service discovery, storage fencing, wallet initialization, TLS trust, RPC credentials, readiness, and graceful shutdown.</p>
-      <a class="text-link" href="https://github.com/kiln-fired/kiln-operator/blob/main/README.md">Read the current architecture notes <span>→</span></a>
-    </div>
-    <div class="stack-diagram">
-      <div class="stack-node orange">LightningNode <small>LND</small></div>
-      <div class="stack-connector"><i></i><span>references</span><i></i></div>
-      <div class="stack-node">BitcoinNode <small>btcd</small></div>
-      <div class="stack-connector"><i></i><span>reconciled by</span><i></i></div>
-      <div class="stack-node muted">Kiln Operator <small>Kubernetes</small></div>
-    </div>
-  </div>
-</section>
-
 <section class="section history" id="field-notes">
   <div class="section-kicker">Field notes</div>
   <div class="section-heading">
@@ -96,5 +78,5 @@ title: Kiln
     <h2>See what’s burning now.</h2>
     <p>Kiln is actively being modernized around a current Kubernetes operator stack and current Bitcoin/Lightning dependencies.</p>
   </div>
-  <a class="button primary" href="https://github.com/kiln-fired/kiln-operator">github.com/kiln-fired/kiln-operator <span>↗</span></a>
+  <a class="button inverse" href="https://github.com/kiln-fired/kiln-operator">github.com/kiln-fired/kiln-operator <span>↗</span></a>
 </section>
