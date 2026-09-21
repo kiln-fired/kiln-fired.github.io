@@ -21,7 +21,8 @@ title: Kiln
 <section class="proof-strip">
   <div><strong>BitcoinNode</strong><span>Declarative btcd-backed nodes</span></div>
   <div><strong>LightningNode</strong><span>Persistent LND lifecycle</span></div>
-  <div><strong>Seed</strong><span>Secret-backed wallet material</span></div>
+  <div><strong>LightningPeer</strong><span>Desired peer connectivity</span></div>
+  <div><strong>LightningChannel</strong><span>Funded channel lifecycle</span></div>
 </section>
 
 <section class="section">
@@ -58,7 +59,7 @@ title: Kiln
   <div class="section-kicker">Field notes</div>
   <div class="section-heading">
     <h2>Built in public, then fired again.</h2>
-    <p>These notes capture the original 2022 experiments that shaped Kiln: simulated Bitcoin networks, operator reconciliation, node APIs, mining behavior, and the path toward self-contained Lightning testing.</p>
+    <p>These notes capture both the original experiments and the current design work: simulated networks, lifecycle recovery, API boundaries, reconciliation semantics, and the path toward a trustworthy Bitcoin and Lightning control plane.</p>
   </div>
   <div class="post-grid">
     {% for post in site.posts %}
