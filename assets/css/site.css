@@ -84,7 +84,7 @@ h1,h2,h3{margin:0;letter-spacing:-.04em}
 .site-footer{border-top:1px solid var(--line);padding:42px 0 55px;display:flex;justify-content:space-between;gap:30px;color:#8f8b85}
 .footer-brand{display:flex;gap:14px;align-items:center}
 .footer-brand strong{display:block;color:#d7d3cc;margin-bottom:4px}
-.footer-brand span:not(.brand-mark){font-size:.8rem}
+.footer-brand span{font-size:.8rem}
 .footer-links{display:flex;gap:24px;align-items:center;font-size:.78rem}
 .footer-links a:hover{color:#ddd}
 .page-hero{padding:120px 0 100px;border-bottom:1px solid var(--line)}
@@ -115,7 +115,7 @@ h1,h2,h3{margin:0;letter-spacing:-.04em}
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-copy{padding:80px 0 30px}
   .hero-mark{min-height:310px}
-  .hero-mark .kiln-svg{width:260px}
+  .hero-logo{width:260px}
   .proof-strip{grid-template-columns:1fr}
   .proof-strip div{border-right:0;border-bottom:1px solid var(--line)}
   .proof-strip div:last-child{border-bottom:0}
