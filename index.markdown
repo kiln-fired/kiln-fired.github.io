@@ -13,9 +13,8 @@ title: Kiln
       <a class="button ghost" href="#field-notes">Read the field notes</a>
     </div>
   </div>
-  <div class="hero-mark" aria-hidden="true">
-    <div class="glow"></div>
-    {% include kiln-mark.svg %}
+  <div class="hero-mark">
+    <img class="hero-logo" src="{{ '/assets/kiln-logo.svg' | relative_url }}" alt="Kiln logo">
   </div>
 </section>
 
