@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{% if page.title and page.title != "Kiln" %}{{ page.title }} · {% endif %}Kiln</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/kiln-mark.svg' | relative_url }}" type="image/svg+xml">
+  {% feed_meta %}
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">{% include kiln-mark.svg %}</span>
+      <span class="brand-name">KILN</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="{{ '/#field-notes' | relative_url }}">Field notes</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a class="nav-github" href="https://github.com/kiln-fired/kiln-operator">GitHub <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>{{ content }}</main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark">{% include kiln-mark.svg %}</span>
+      <div><strong>Kiln</strong><span>Kubernetes-native Bitcoin + Lightning infrastructure.</span></div>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/kiln-fired">GitHub organization</a>
+      <a href="https://www.openpersuasion.org/">OpenPersuasion</a>
+      <span>Open source</span>
+    </div>
+  </footer>
+</body>
+</html>
