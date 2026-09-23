@@ -27,7 +27,7 @@ code{font-family:"DM Mono",monospace;color:#b84400;background:#eee8df;padding:.1
 .nav-github:hover{background:var(--ink);color:#fff!important}
 .hero{min-height:650px;display:grid;grid-template-columns:1.18fr .82fr;align-items:center;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;right:-160px;top:20px;width:520px;height:520px;border:1px solid #e8dfd4;border-radius:50%}
-.hero-copy{max-width:760px;padding:92px 0 104px;position:relative;z-index:2}
+.hero-copy{max-width:760px;padding:54px 0 104px;position:relative;z-index:2}
 .eyebrow,.section-kicker{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:#3f3b37}
 .eyebrow{display:flex;align-items:center;gap:10px}
 .eyebrow span{width:9px;height:9px;background:var(--orange);border-radius:50%}
@@ -120,7 +120,7 @@ h1,h2,h3{margin:0;letter-spacing:-.045em}
   .site-nav a:not(.nav-github){display:none}
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero:before{right:-260px;top:180px}
-  .hero-copy{padding:78px 0 22px}
+  .hero-copy{padding:46px 0 22px}
   .hero-mark{min-height:330px}
   .hero-logo{width:290px}
   .proof-strip{grid-template-columns:1fr}
