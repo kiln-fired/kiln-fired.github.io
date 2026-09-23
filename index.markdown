@@ -28,29 +28,29 @@ title: Kiln
 <section class="section">
   <div class="section-kicker">What Kiln does</div>
   <div class="section-heading">
-    <h2>A control plane for protocol infrastructure.</h2>
-    <p>Bitcoin and Lightning nodes are stateful, identity-bearing infrastructure. Kiln gives Kubernetes enough domain knowledge to operate them intentionally instead of treating them as generic containers.</p>
+    <h2>Protocol-aware lifecycle, expressed through Kubernetes.</h2>
+    <p>Kiln models Bitcoin and Lightning as a graph of Kubernetes resources, then reconciles both cluster state and live protocol state. References, ownership, persistence, recovery, credentials, and safety are explicit parts of the API rather than deployment conventions.</p>
   </div>
   <div class="feature-grid">
     <article class="feature-card">
       <span class="feature-index">01</span>
-      <h3>Reconcile node state</h3>
-      <p>Model Bitcoin and Lightning nodes as first-class Kubernetes resources. Desired state lives in the API, while the operator handles the work of converging the cluster toward it.</p>
+      <h3>Model the protocol graph</h3>
+      <p>BitcoinNode, LightningNode, LightningPeer, LightningChannel, and Seed form a reference-based API. Resources declare relationships without turning the custom resources themselves into a Kubernetes ownership tree.</p>
     </article>
     <article class="feature-card">
       <span class="feature-index">02</span>
-      <h3>Protect Lightning identity</h3>
-      <p>Lightning state is not disposable. Kiln retains node storage, uses controlled StatefulSet updates, and reuses persisted wallet state across pod and controller restarts.</p>
+      <h3>Preserve identity and recovery</h3>
+      <p>Kiln fences stateful volumes, retains node storage, publishes retained Static Channel Backups, and keeps Seed output Secrets independent of the resources that produced them.</p>
     </article>
     <article class="feature-card">
       <span class="feature-index">03</span>
-      <h3>Publish safer RPC access</h3>
-      <p>Managed client credentials expose restricted read-only and invoice macaroons with TLS material, while deliberately keeping the admin macaroon private.</p>
+      <h3>Reconcile live protocol state</h3>
+      <p>Readiness comes from authenticated runtime checks, not just healthy Pods. Kiln also reconciles Bitcoin peer sets, Lightning peer connectivity, and channel lifecycle against the nodes themselves.</p>
     </article>
     <article class="feature-card">
       <span class="feature-index">04</span>
-      <h3>Compose node dependencies</h3>
-      <p>A LightningNode can reference a BitcoinNode directly. Kiln waits for the Bitcoin backend to become ready, then derives the in-cluster connection details and credentials.</p>
+      <h3>Make safety boundaries explicit</h3>
+      <p>Restricted LND client credentials exclude admin access, managed dependencies resolve by reference, external Bitcoin backends are supported explicitly, and mainnet requires deliberate opt-in.</p>
     </article>
   </div>
 </section>
@@ -58,7 +58,7 @@ title: Kiln
 <section class="section history" id="field-notes">
   <div class="section-kicker">Field notes</div>
   <div class="section-heading">
-    <h2>Built in public, then fired again.</h2>
+    <h2>Notes from active development.</h2>
     <p>These notes capture both the original experiments and the current design work: simulated networks, lifecycle recovery, API boundaries, reconciliation semantics, and the path toward a trustworthy Bitcoin and Lightning control plane.</p>
   </div>
   <div class="post-grid">
@@ -76,8 +76,8 @@ title: Kiln
 <section class="cta">
   <div>
     <div class="section-kicker">Open source</div>
-    <h2>See what’s burning now.</h2>
-    <p>Kiln is actively being modernized around a current Kubernetes operator stack and current Bitcoin/Lightning dependencies.</p>
+    <h2>Explore Kiln on GitHub.</h2>
+    <p>Kiln is under active development. The operator, API definitions, tests, examples, and recovery work are all available in the project repository.</p>
   </div>
   <a class="button inverse" href="https://github.com/kiln-fired/kiln-operator">github.com/kiln-fired/kiln-operator <span>↗</span></a>
 </section>
